@@ -13,3 +13,5 @@ To this aim I followed three step method:
 
 What drawn me to this project is that the data was collected with help of numerous volunteers during 2015 census. Those volunteers (and NYC Park staff) walked every street in NYC and laboriously recorded the GPS coordinates, species and health indicators of almost 500.000 trees. Isn't it amazing?
 The dataset is available at https://nycopendata.socrata.com, feel free to play with it yourself, it's very well documented.
+
+![map_trees](map_trees.png)
