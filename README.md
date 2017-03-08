@@ -44,7 +44,7 @@ Is there a relationship between species and health? Let's look at a plot of simp
 
 In the first pass I will use just a subset of features choosing the ones that look like most likely candidates to influence trees health, such as trunk diameter, health status, location and species.
 
-![overall_health](overall_health.png.png)
+![overall_health](overall_health.png)
 
 Is there a relationship between stewardship signs and health or between guards and health?
 
