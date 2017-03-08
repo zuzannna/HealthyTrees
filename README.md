@@ -9,8 +9,6 @@ There were several themes to this hackathon and I chose to focus on two:
 
 Trees in urban settings face many challenges from both people and the environment. Tree stewardship by the community is an essential part of achieving urban forestry goals. Resources for tree care are finite, and so it is important that we better understand tree stewards and the challenges they face, and maximize the effectiveness of our volunteers by supporting their stewardship activity.
 
-![new_tree](new_tree.png)
-
 My goal was to explore Street Tree Census data to help understand who collects the most data, where stewardship efforts are most needed and what is the influence of seasonality on volunteer engagement. Turns out, even though the majority of data was collected by professional staff, a big chunk of it we have thanks to volunteers. By visual inspection of the distribution of data entries across boroughs we can see an interesting pattern emerge:
 
 ![who_collected](who_collected.png)
@@ -47,9 +45,11 @@ Is there a relationship between species and health? Let's look at a plot of simp
 
 **Insights:** Visual inspection suggests there aren't striking differences between distribution of trees labeled as "healthy" versus "in fair health" (compare second and third plots), however there are some species that seem to be more prone to fall into the unhealthy category. For example, Cherry, Ginkgo or Little Leaf Linden's bars seem to be higher in the third compared to second plot. This might be simply because it's easier to notice the difference in species that are common in the data set (and are subsequently represented with higher bars) or that other species are less likely to be labeled as unhealthy.
 
-## Forecasting which areas are likely to need more funds in the future
 
+See the .ipynb notebook for logistic regression & random forest model predicting key health indicators and more in-depth analysis of model features 
 
+## Final blurb 🌳😀
 
 What drawn me to this project is that the data was collected with help of numerous volunteers during 2015 census. Those volunteers (and NYC Park staff) walked every street in NYC and laboriously recorded the GPS coordinates, species and health indicators of almost 500.000 trees. Isn't it amazing?
+
 The dataset is available at https://nycopendata.socrata.com, feel free to play with it yourself, it's very well documented.
