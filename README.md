@@ -21,11 +21,11 @@ I suspected that if we look at the map it will be the farthest neighborhoods fro
 
 Are there any seasonal trends? Having data from just one year we can't use any reliable quantitative methods, such as ARIMA, so our observations are purely speculative.
 
-The map below represents data entries within five boroughs recorded by three groups: staff (NYC Parks & TreesCount, in different shades of blue) and volunteers (green). Missing entries are plotted in grey. You can play around by changing the date of the records in the lower left corner.
+The map below represents data entries within five boroughs recorded by three groups: staff (NYC Parks & TreesCount, in different shades of blue) and volunteers (green). Missing entries are plotted in grey. You can play around by changing the date of the records in the lower left corner. **The map above is a static screenshot, in order to see seasonal changes you need to click on the link**
 
 ![map_seasonality](map_seasonality.png)
 
-**Source:** https://zuzanna.carto.com/viz/1583bbc6-d77f-11e6-af25-0e05a8b3e3d7/public_map **The map above is a static screenshot, in order to see seasonal changes you need to click on the link**
+**Source:** https://zuzanna.carto.com/viz/1583bbc6-d77f-11e6-af25-0e05a8b3e3d7/public_map 
 
 
 # 2. How can we use the Street Tree Census Data to more efficiently plan for the long term health and growth of the urban forest?
@@ -36,9 +36,28 @@ With the 1995 and 2005 street tree censuses, NYC Parks has been able to catalyze
 
 **Source:** https://zuzanna.carto.com/viz/7317a0b0-d77d-11e6-83c6-0e05a8b3e3d7/public_map
 
+Looks like we have a solid coverage across the city, with clear gaps where parks* (e.g. Central Park) or airports are - which is a good sanity check. For now, I'm not looking at the density of the trees in the city, just checking if there are any obvious flaws to the dataset.
+
 ## Key indicators of poor health
 
 Is there a relationship between species and health? Let's look at a plot of simple counts of trees within each specie that were categorized as "healthy" and those that were described as being in "poor" health.
+
+In the first pass I will use just a subset of features choosing the ones that look like most likely candidates to influence trees health, such as trunk diameter, health status, location and species.
+
+![overall_health](overall_health.png.png)
+
+Is there a relationship between stewardship signs and health or between guards and health?
+
+![stewardship_guards_health](stewardship_guards_health.png)
+
+Doesn't seem like it. Just from visual inspection seems like, proportionally, there are more healthy than in "poor condition" trees among those that have no guards whatsoever compared to those that do have (helpful or harmful).
+How about trees' diameter? Does it look like there is a difference on any of the above features depending on trees' diameter?
+
+![diameter](diameter.png)
+
+**Insights:** Well, who would have guessed? Dead trees have a smaller diameter than alive ones! Hah, but there could be something in there - it could mean, for example, that freshly planted trees which have a small diameter are in highest risk. This makes more sense when we look at the rightmost figure - it turns out that trees labeled in "good" health have also higher diameter. This relationship is further explored with the logistic regression and random forest models (you can read more about them in the python notebook).
+
+What about different species? Are some of them more likely to be at health risk?
 
 ![species_good](species_good.png)
 ![species_poor](species_poor.png)
