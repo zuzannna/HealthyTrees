@@ -1,8 +1,9 @@
 # Healthy NYC Trees
+![data_jam](data_jam.png)
 
 How can we use the Street Tree Census Data to more efficiently plan for the long term health of the urban forest? As part of TreesCount! 2015 on the National Day of Civic Hacking (06/04/16), NYC Parks has engaged with  voluntreers, tree-oriented community groups, and non-profit partners to identify how street tree census data can help improve equitable care of our urban forest. 
 
-![data_jam](data_jam.png)
+
 
 There were several themes to this hackathon and I chose to focus on two:
 
@@ -35,7 +36,7 @@ Source: https://zuzanna.carto.com/viz/1583bbc6-d77f-11e6-af25-0e05a8b3e3d7/publi
 
 With the 1995 and 2005 street tree censuses, NYC Parks has been able to catalyze major advances in urban forest management, making science-based operational decisions and quantify the benefits of the urban forest. The coverage of the data is awesome:
 
-![map_trees](map_trees)
+![map_trees](map_trees.png)
 
 source: https://zuzanna.carto.com/viz/7317a0b0-d77d-11e6-83c6-0e05a8b3e3d7/public_map
 
@@ -43,10 +44,6 @@ My goal was to gain actionable insights and:
 * identify the key indicators of poor health
 * forecast which areas are likely to need more funds in the future
 
-To this aim I followed three step method:
-* data import exploration
-* analysis and modeling
-* model validation
 
 
 What drawn me to this project is that the data was collected with help of numerous volunteers during 2015 census. Those volunteers (and NYC Park staff) walked every street in NYC and laboriously recorded the GPS coordinates, species and health indicators of almost 500.000 trees. Isn't it amazing?
