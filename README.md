@@ -5,7 +5,7 @@ How can we use the Street Tree Census Data to more efficiently plan for the long
 
 There were several themes to this hackathon and I chose to focus on two:
 
-# 1. How can we use Street Tree Census Data to better engage with and target the efforts of community stewardship volunteers to improve the health of the urban forest?
+# How can we use Street Tree Census Data to better engage with and target the efforts of community stewardship volunteers to improve the health of the urban forest?
 
 Trees in urban settings face many challenges from both people and the environment. Tree stewardship by the community is an essential part of achieving urban forestry goals. Resources for tree care are finite, and so it is important that we better understand tree stewards and the challenges they face, and maximize the effectiveness of our volunteers by supporting their stewardship activity.
 
@@ -28,7 +28,7 @@ The map below represents data entries within five boroughs recorded by three gro
 **Source:** https://zuzanna.carto.com/viz/1583bbc6-d77f-11e6-af25-0e05a8b3e3d7/public_map 
 
 
-# 2. How can we use the Street Tree Census Data to more efficiently plan for the long term health and growth of the urban forest?
+# How can we use the Street Tree Census Data to more efficiently plan for the long term health and growth of the urban forest?
 
 With the 1995 and 2005 street tree censuses, NYC Parks has been able to catalyze major advances in urban forest management, making science-based operational decisions and quantify the benefits of the urban forest. The coverage of the data is awesome:
 
@@ -64,10 +64,15 @@ What about different species? Are some of them more likely to be at health risk?
 
 **Insights:** Visual inspection suggests there aren't striking differences between distribution of trees labeled as "healthy" versus "in fair health" (compare second and third plots), however there are some species that seem to be more prone to fall into the unhealthy category. For example, Cherry, Ginkgo or Little Leaf Linden's bars seem to be higher in the third compared to second plot. This might be simply because it's easier to notice the difference in species that are common in the data set (and are subsequently represented with higher bars) or that other species are less likely to be labeled as unhealthy.
 
+# Classification of unhealthy trees with machine learning methods
 
-See the .ipynb notebook for logistic regression & random forest model predicting key health indicators and more in-depth analysis of model features 
+Logistic function is often used in social and life sciences to describe phenomena with binary outcomes ("**no tumor / tumor present**"). I used it in my <a href="https://www.ncbi.nlm.nih.gov/pubmed/25240420">research</a> to describe how well we remember objects in visual space. Basically, it can be described as:
 
-## Final blurb 🌳😀
+![logistic](images/logistic.png)
+
+Where *k* is the slope of the function (how steep it is) and *x_0* is the point where the *y* value is exactly 0.5 (sometimes called *threshold*).
+
+# Final thoughts 🌳😀
 
 What drawn me to this project is that the data was collected with help of numerous volunteers during 2015 census. Those volunteers (and NYC Park staff) walked every street in NYC and laboriously recorded the GPS coordinates, species and health indicators of almost 500.000 trees. Isn't it amazing?
 
