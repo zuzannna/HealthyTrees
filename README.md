@@ -66,11 +66,11 @@ What about different species? Are some of them more likely to be at health risk?
 
 # Classification of unhealthy trees with machine learning methods
 
-Logistic function is often used in social and life sciences to describe phenomena with binary outcomes ("**no tumor / tumor present**"). I used it in my <a href="https://www.ncbi.nlm.nih.gov/pubmed/25240420">research</a> to describe how well we remember objects in visual space. Basically, it can be described as:
+Logistic function is often used in social and life sciences to describe phenomena with binary outcomes ("*no tumor / tumor present*"). I used it in my <a href="https://www.ncbi.nlm.nih.gov/pubmed/25240420">research</a> to describe how well we remember objects in visual space. Basically, it can be described as:
 
 ![logistic](images/logistic.png)
 
-Where *k* is the slope of the function (how steep it is) and *x_0* is the point where the *y* value is exactly 0.5 (sometimes called *threshold*).
+Where *k* is the slope of the function (how steep it is) and *$x_{0}$* is the point where the *y* value is exactly 0.5 (sometimes called *threshold*).
 
 # Final thoughts 🌳😀
 
