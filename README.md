@@ -66,13 +66,20 @@ What about different species? Are some of them more likely to be at health risk?
 
 # Classification of unhealthy trees with machine learning methods
 
-Logistic function is often used in social and life sciences to describe phenomena with binary outcomes ("*no tumor / tumor present*"). I used it in my <a href="https://www.ncbi.nlm.nih.gov/pubmed/25240420">research</a> to describe how well we remember objects in visual space. Basically, it can be described as:
+Logistic function is often used in social and life sciences to describe phenomena with binary outcomes ("*no tumor / tumor present*"). I used it in my <a href="https://www.ncbi.nlm.nih.gov/pubmed/25240420">research</a> to describe how well we remember objects in visual space. There is nothing magical about it, in fact, you could also use cumulative <a href="https://en.wikipedia.org/wiki/Cumulative_distribution_function">normal</a>, <a href="https://en.wikipedia.org/wiki/Cauchy_distribution">Cauchy</a>, <a href="https://en.wikipedia.org/wiki/Gumbel_distribution">Gumbel</a> or <a href="https://en.wikipedia.org/wiki/Weibull_distribution">Weibull</a> (they differ slightly when it comes to asymptotes and other parameters). Basically, it can be described as:
 
 ![logistic](images/logistic.png)
 
-Where *k* is the slope of the function (how steep it is) and *x_0* is the point where the *y* value is exactly 0.5 (sometimes called *threshold*). *Threshold* is an important indicator for determining bias in your data - for instance, if in the situation pictured above we add another curve where *x = 2* when *y = 0* it means that the whole function is shifted to the right but the dynamics of the phenomenon is essentially the same. If this second curve has a different *k* (or the *slope*) it means that the dynamics is different - the funcion asymptotes at 1 faster or slower which has important implications for the interpretation of your results. Following the tumor example, lets say that the *x* axis is the size of tissue cluster and *y* the probability that it is a malignant tumor. Then, if they have a different threshold but the same slope the two curves could represent two different cell types which typically have different sizes (therefore, are shifted on the *x* axis) but follow a similar process when growing into a tumor (by the way, I have no idea about cancer, this is a made up example). If, however, they have different *k* but the same threshold it means that for one cell type (with steeper slope) the probability of being a malignant tumor increases faster with size increase.
+Source: Wikipedia.org
 
-In classification tasks the threshold is the boundary of decision: 
+Where *k* is the slope of the function (how steep it is) and *x_0* is the point where the *y* value is exactly 0.5 (sometimes called *threshold*). *Threshold* is an important indicator for determining bias in your data - for instance, if in the situation pictured above we add another curve where *x = 2* when *y = 0* it means that the whole function is shifted to the right but the dynamics of the phenomenon is essentially the same. If this second curve has a different *k* (or the *slope*) it means that the dynamics is different - the funcion asymptotes at *y = 1* faster or slower which has important implications for the interpretation of your results. Following the tumor example, lets say that the *x* axis is the size of tissue cluster and *y* the probability that it is a malignant tumor. Then, if they have a different threshold but the same slope the two curves could represent two different cell types which typically have different sizes (therefore, are shifted on the *x* axis) but follow a similar process when growing into a tumor (by the way, I have no idea about cancer, this is a made up example). If, however, they have different slope but the same threshold it means that for one cell type (with steeper slope) the probability of being a malignant tumor increases faster with size.
+
+In classification tasks the threshold is the boundary of decision: that's the point above which we decide that this is a tumor and below we say it's just a lump of cells. 
+
+## Additional readings:
+
+1. As always, I recommend reviewing <a href="https://www.coursera.org/learn/machine-learning/home/week/3">Andrew Ng's ML lectures on logistic regression</a>
+2. Classic, beautiful paper by <a href="ftp://ftp.snl.salk.edu/pub/reynolds/Flash_Jump/pdf944.pdf">Wichmann & Hill on fitting, sampling and goodness of fit of psychometric function</a>.
 
 # Final thoughts 🌳😀
 
