@@ -68,6 +68,8 @@ What about different species? Are some of them more likely to be at health risk?
 
 Logistic function is often used in social and life sciences to describe phenomena with binary outcomes ("*no tumor / tumor present*"). I used it in my <a href="https://www.ncbi.nlm.nih.gov/pubmed/25240420">research</a> to describe how well we remember objects in visual space. There is nothing magical about it, in fact, you could also use cumulative <a href="https://en.wikipedia.org/wiki/Cumulative_distribution_function">normal</a>, <a href="https://en.wikipedia.org/wiki/Cauchy_distribution">Cauchy</a>, <a href="https://en.wikipedia.org/wiki/Gumbel_distribution">Gumbel</a> or <a href="https://en.wikipedia.org/wiki/Weibull_distribution">Weibull</a> (they differ slightly when it comes to asymptotes and other parameters). Basically, it can be described as:
 
+<a href="http://www.kyb.tue.mpg.de/fileadmin/user_upload/files/publications/pdfs/pdf944.pdf">Wichmann and Hill on fitting, sampling and goodness of fit of psychometric function</a>.
+
 ![logistic](images/logistic.png)
 
 Source: Wikipedia.org
@@ -79,7 +81,7 @@ Following the tumor example, lets say that the *x* axis is the size of tissue cl
 In classification tasks the threshold is the boundary of decision: that's the point above which we decide that this is a tumor and below we say it's just a lump of cells. 
 
 ## Additional readings about logistic:
-<a href="sfsf"> 
+
 1. As always, I recommend reviewing <a href="https://www.coursera.org/learn/machine-learning/home/week/3">Andrew Ng's ML lectures on logistic regression</a>
 2. Classic, beautiful and thorough paper by <a href="http://www.kyb.tue.mpg.de/fileadmin/user_upload/files/publications/pdfs/pdf944.pdf">Wichmann and Hill on fitting, sampling and goodness of fit of psychometric function</a>.
 3. Amazing, very well written <a href="https://www.elsevier.com/books/psychophysics/kingdom/978-0-12-373656-7">introductory textbook</a> to psychophysics along with code and examples by Kingdom and Prins. Worth recommending is also their Matlab and Octave toolbox <a href="http://www.palamedestoolbox.org">Palamedes</a> for fitting psychophysical data using MLA or Bayesian methods.
