@@ -70,7 +70,7 @@ Logistic function is often used in social and life sciences to describe phenomen
 
 ![logistic](images/logistic.png)
 
-Source: Wikipedia.org
+<p style="text-align: right;">Source: Wikipedia.org</p>
 
 Where *k* is the slope of the function (how steep it is) and *x_0* is the point where the *y* value is exactly 0.5 (sometimes called *threshold*). *Threshold* is an important indicator for determining bias in your data - for instance, if in the situation pictured above we add another curve where *x = 2* when *y = 0* it means that the whole function is shifted to the right but the dynamics of the phenomenon is essentially the same. If this second curve has a different *k* (or the *slope*) it means that the dynamics is different - the funcion asymptotes at *y = 1* faster or slower which has important implications for the interpretation of your results. 
 
@@ -81,8 +81,8 @@ In classification tasks the threshold is the boundary of decision: that's the po
 ## Additional readings about logistic:
 
 1. As always, I recommend reviewing <a href="https://www.coursera.org/learn/machine-learning/home/week/3">Andrew Ng's ML lectures on logistic regression</a>
-2. Classic, beautiful and thorough paper by <a href="ftp://ftp.snl.salk.edu/pub/reynolds/Flash_Jump/pdf944.pdf">Wichmann and Hill on fitting, sampling and goodness of fit of psychometric function</a>.
-3. Amazing, very well written <a href="https://www.elsevier.com/books/psychophysics/kingdom/978-0-12-373656-7">introductory textbook to psychophysics along with code and examples by Kingdom and Prins. Worth recommending is also their Matlab and Octave toolbox <a href="http://www.palamedestoolbox.org">Palamedes</a> for fitting psychophysical data using MLA or Bayesian methods.
+2. Classic, beautiful and thorough paper by <a href="http://www.kyb.tue.mpg.de/fileadmin/user_upload/files/publications/pdfs/pdf944.pdf">Wichmann and Hill on fitting, sampling and goodness of fit of psychometric function</a>.
+3. Amazing, very well written <a href="https://www.elsevier.com/books/psychophysics/kingdom/978-0-12-373656-7">introductory textbook</a> to psychophysics along with code and examples by Kingdom and Prins. Worth recommending is also their Matlab and Octave toolbox <a href="http://www.palamedestoolbox.org">Palamedes</a> for fitting psychophysical data using MLA or Bayesian methods.
 
 # Final thoughts 🌳😀
 
