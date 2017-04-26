@@ -76,10 +76,10 @@ Where *k* is the slope of the function (how steep it is) and *x_0* is the point 
 
 In classification tasks the threshold is the boundary of decision: that's the point above which we decide that this is a tumor and below we say it's just a lump of cells. 
 
-## Additional readings:
+## Additional readings about logistic:
 
 1. As always, I recommend reviewing <a href="https://www.coursera.org/learn/machine-learning/home/week/3">Andrew Ng's ML lectures on logistic regression</a>
-2. Classic, beautiful paper by <a href="ftp://ftp.snl.salk.edu/pub/reynolds/Flash_Jump/pdf944.pdf">Wichmann & Hill on fitting, sampling and goodness of fit of psychometric function</a>.
+2. Classic, beautiful and thorough paper by <a href="ftp://ftp.snl.salk.edu/pub/reynolds/Flash_Jump/pdf944.pdf">Wichmann and Hill on fitting, sampling and goodness of fit of psychometric function</a>.
 
 # Final thoughts 🌳😀
 
