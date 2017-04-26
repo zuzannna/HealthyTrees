@@ -70,15 +70,13 @@ Logistic function is often used in social and life sciences to describe phenomen
 
 ![logistic](images/logistic_plot.png)
 
-Source: Wikipedia.org
-
-Where *k* is the slope of the function (how steep it is) and *x_0* is the point where the *y* value is exactly 0.5 (sometimes called *threshold*). *Threshold* is an important indicator for determining bias in your data - for instance, if in the situation pictured above we add another curve where *x = 2* when *y = 0* it means that the whole function is shifted to the right but the dynamics of the phenomenon is essentially the same. If this second curve has a different *k* (or the *slope*) it means that the dynamics is different - the funcion asymptotes at *y = 1* faster or slower which has important implications for the interpretation of your results. 
+Where **k** is the slope of the function (how steep it is) and **x0** is the point where the *y* value is exactly 0.5 (sometimes called threshold). **Threshold** is an important indicator for determining bias in your data - for instance, if in the situation pictured above we add another curve where *x = 2* when *y = 0* it means that the whole function is shifted to the right but the dynamics of the phenomenon is essentially the same. If this second curve has a different *k* (or the *slope*) it means that the dynamics is different - the funcion asymptotes at *y = 1* faster or slower which has important implications for the interpretation of your results. 
 
 ![logistic](images/logistic.png)
 
 Following the tumor example, lets say that the *x* axis is the size of tissue cluster and *y* the probability that it is a malignant tumor. Then, if they have a different threshold but the same slope the two curves could represent two different cell types which typically have different sizes (therefore, are shifted on the *x* axis) but follow a similar process when growing into a tumor (by the way, I have no idea about cancer, this is a made up example). If, however, they have different slope but the same threshold it means that for one cell type (with steeper slope) the probability of being a malignant tumor increases faster with size.
 
-In classification tasks the threshold is the boundary of decision: that's the point above which we decide that this is a tumor and below we say it's just a lump of cells. 
+In classification tasks the threshold is the boundary of decision: that's the point above which we decide that this is a tumor and below we say it's just a lump of cells. In this analysis, I used logistic function to classify trees as "healthy" or "unhealthy" based on a set of parameters such as species, neighborhood, stewardship signs, presence of metal guards around the trunk and who collected the data.
 
 ## Additional readings about logistic:
 
@@ -86,8 +84,6 @@ In classification tasks the threshold is the boundary of decision: that's the po
 2. Classic, beautiful and thorough paper by Wichmann and Hill on fitting, sampling and goodness of fit of psychometric <a href="http://www.kyb.tue.mpg.de/fileadmin/user_upload/files/publications/pdfs/pdf944.pdf">function</a>.
 3. Amazing, very well written <a href="https://www.elsevier.com/books/psychophysics/kingdom/978-0-12-373656-7">introductory textbook</a> to psychophysics along with code and examples by Kingdom and Prins. Worth recommending is also their Matlab and Octave toolbox <a href="http://www.palamedestoolbox.org">Palamedes</a> for fitting psychophysical data using MLA or Bayesian methods.
 
-# Final thoughts 🌳😀
-
-What drawn me to this project is that the data was collected with help of numerous volunteers during 2015 census. Those volunteers (and NYC Park staff) walked every street in NYC and laboriously recorded the GPS coordinates, species and health indicators of almost 500.000 trees. Isn't it amazing?
+# Data 🌳😀
 
 The dataset is available at https://nycopendata.socrata.com, feel free to play with it yourself, it's very well documented.
