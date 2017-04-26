@@ -70,7 +70,9 @@ Logistic function is often used in social and life sciences to describe phenomen
 
 ![logistic](images/logistic.png)
 
-Where *k* is the slope of the function (how steep it is) and *$x_{0}$* is the point where the *y* value is exactly 0.5 (sometimes called *threshold*).
+Where *k* is the slope of the function (how steep it is) and *x_0* is the point where the *y* value is exactly 0.5 (sometimes called *threshold*). *Threshold* is an important indicator for determining bias in your data - for instance, if in the situation pictured above we add another curve where *x = 2* when *y = 0* it means that the whole function is shifted to the right but the dynamics of the phenomenon is essentially the same. If this second curve has a different *k* (or the *slope*) it means that the dynamics is different - the funcion asymptotes at 1 faster or slower which has important implications for the interpretation of your results. Following the tumor example, lets say that the *x* axis is the size of tissue cluster and *y* the probability that it is a malignant tumor. Then, if they have a different threshold but the same slope the two curves could represent two different cell types which typically have different sizes (therefore, are shifted on the *x* axis) but follow a similar process when growing into a tumor (by the way, I have no idea about cancer, this is a made up example). If, however, they have different *k* but the same threshold it means that for one cell type (with steeper slope) the probability of being a malignant tumor increases faster with size increase.
+
+In classification tasks the threshold is the boundary of decision: 
 
 # Final thoughts 🌳😀
 
