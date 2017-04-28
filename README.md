@@ -66,11 +66,11 @@ What about different species? Are some of them more likely to be at health risk?
 
 # Classification of unhealthy trees with machine learning methods
 
-Logistic function is often used in social and life sciences to describe phenomena with binary outcomes ("*no tumor / tumor present*"). I used it in my <a href="https://www.ncbi.nlm.nih.gov/pubmed/25240420">research</a> to describe how well we remember objects in visual space. There is nothing magical about it, in fact, you could also use cumulative <a href="https://en.wikipedia.org/wiki/Cumulative_distribution_function">normal</a>, <a href="https://en.wikipedia.org/wiki/Cauchy_distribution">Cauchy</a>, <a href="https://en.wikipedia.org/wiki/Gumbel_distribution">Gumbel</a> or <a href="https://en.wikipedia.org/wiki/Weibull_distribution">Weibull</a> (they differ slightly when it comes to asymptotes and other parameters). Basically, it can be described as:
+**Logistic function** is often used in social and life sciences to describe phenomena with binary outcomes ("*no tumor / tumor present*"). I used it in my <a href="https://www.ncbi.nlm.nih.gov/pubmed/25240420">research</a> to describe how well we remember objects in visual space. There is nothing magical about it, in fact, you could also use <a href="https://en.wikipedia.org/wiki/Cumulative_distribution_function">cumulative normal</a>, <a href="https://en.wikipedia.org/wiki/Cauchy_distribution">Cauchy</a>, <a href="https://en.wikipedia.org/wiki/Gumbel_distribution">Gumbel</a> or <a href="https://en.wikipedia.org/wiki/Weibull_distribution">Weibull</a> (they differ slightly when it comes to asymptotes and other parameters). Basically, it can be described as:
 
 ![logistic](images/logistic_plot.png)
 
-Where **k** is the slope of the function (how steep it is) and **x0** is the point where the *y* value is exactly 0.5 (sometimes called threshold). **Threshold** is an important indicator for determining bias in your data - for instance, if in the situation pictured above we add another curve where *x = 2* when *y = 0* it means that the whole function is shifted to the right but the dynamics of the phenomenon is essentially the same. If this second curve has a different *k* (or the *slope*) it means that the dynamics is different - the funcion asymptotes at *y = 1* faster or slower which has important implications for the interpretation of your results. 
+Where **k** is the slope of the function (how steep it is) and **x0** is the point where the *y* value is exactly 0.5 (sometimes called threshold). **Threshold** is an important indicator for determining bias in your data - for instance, if in the situation pictured above we add another curve where *x = 2* when *y = 0* it means that the whole function is shifted to the right but the dynamics of the phenomenon is essentially the same. If this second curve has a different *k* (or the **slope**) it means that the dynamics is different - the funcion asymptotes at *y = 1* faster or slower which has important implications for the interpretation of your results. 
 
 ![logistic](images/logistic.png)
 
@@ -78,7 +78,14 @@ Following the tumor example, lets say that the *x* axis is the size of tissue cl
 
 In classification tasks the threshold is the boundary of decision: that's the point above which we decide that this is a tumor and below we say it's just a lump of cells. In this analysis, I used logistic function to classify trees as "healthy" or "unhealthy" based on a set of parameters such as species, neighborhood, stewardship signs, presence of metal guards around the trunk and who collected the data.
 
-## Additional readings about logistic:
+The most important features that increase the odds of that the tree will get "unhealthy" label:
+
+![odds_high](images/odds_high_plot.png)
+
+It's hard to read, but the top ones are species: 79, neighborhood: 108, 124, 125 and 98.
+
+
+## Additional readings about logistic and psychometric function:
 
 1. As always, I recommend reviewing <a href="https://www.coursera.org/learn/machine-learning/home/week/3">Andrew Ng's ML lectures on logistic regression</a>
 2. Classic, beautiful and thorough paper by Wichmann and Hill on fitting, sampling and goodness of fit of psychometric <a href="http://www.kyb.tue.mpg.de/fileadmin/user_upload/files/publications/pdfs/pdf944.pdf">function</a>.
