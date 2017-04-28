@@ -84,10 +84,11 @@ The most important features that increase the odds of that the tree will get "un
 
 The font is small, but the top ones are species: 79, neighborhood: 108, 124, 125 and 98. For a similar plot which shows the odds that the tree will get "healthy" label. In short, the top ones are species 44, and neighborhoods 81, 95, 73 and 58.
 
-Let's look at the **confusion matrix** to assess the performance of the model. It gives us information about hits (true positives), false alarms (false positives), misses (false negatives) and correct rejections (true negatives). This distinction comes from signal detection theory - if we imagine two overlapping distributions, e.g. with healthy and unhealthy trees sitting on an axis with, for simplicity, continous variable like *trunk size*, we could determine where each of the components of the confusion matrix comes from by applying a criterion threshold:
+Let's look at the **confusion matrix** to assess the performance of the model. It gives us information about *hits* (true positives), *false alarms* (false positives), *misses* (false negatives) and *correct rejections* (true negatives). This distinction comes from signal detection theory - if we imagine two overlapping distributions, e.g. with healthy and unhealthy trees sitting on an axis with, for simplicity, continous variable like *trunk size*, we could determine where each of the components of the confusion matrix comes from by applying a criterion threshold:
 
 ![SDT](images/SDT.png)
 
+**Source**: David Heeger's <a href = "http://www.cns.nyu.edu/~david/handouts/sdt-advanced.pdf">notes</a> about Signal Detection Theory
 
 ## Additional readings about logistic and psychometric function:
 
